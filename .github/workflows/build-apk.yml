@@ -21,6 +21,8 @@ jobs:
         run: |
           if [ -f SshVpn-review-fixed.zip ]; then
             unzip -o SshVpn-review-fixed.zip
+          elif [ -f sshvpn-source-for-github.zip ]; then
+            unzip -o sshvpn-source-for-github.zip
           elif [ -f source.zip ]; then
             unzip -o source.zip
           fi
